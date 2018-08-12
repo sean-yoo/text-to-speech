@@ -1,0 +1,91 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display:flex;
+  min-height: 100vh;
+  align-items: center;
+
+  background: linear-gradient(to right, orange, red);
+}
+
+
+.voiceinator {
+  padding:2rem;
+  width:50rem;
+  margin:0 auto;
+  border-radius:1rem;
+  position: relative;
+  background:white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow:0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  width:calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding:.5rem;
+  background-color: #ffb732;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23ffff00' fill-opacity='0.57'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border-bottom: 5px solid #F3C010;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  text-shadow:3px 3px 0 #F3C010;
+
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin:10px 0;
+  padding:10px;
+  border:0;
+  font-size: 2rem;
+  background:#E8E8E8;
+  outline:0;
+}
+
+textarea {
+  height: 20rem;
+}
+
+input[type="select"] {
+
+}
+
+.voiceinator button {
+  background-color: #ffb732;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23ffff00' fill-opacity='0.57'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border:0;
+  width: 49%;
+  float:left;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+  font-size: 2rem;
+  border-bottom: 5px solid #F3C010;
+  cursor:pointer;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top:2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
